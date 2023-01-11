@@ -4,158 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Poppins:wght@300;400;500&family=Roboto&display=swap" rel="stylesheet">
+    
     <!-- Le titre de la page  -->
-    <title>Checkpoint_HTML</title>
-    <!-- Icone de l'onglet -->
-    <link rel="shortcut icon" href="html-logo.png">
+    <title>Checkpoint_CSS</title>
+    <!-- Icone de l'onglet
+    <link rel="shortcut icon" href="html-logo.png"> -->
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a name="TopOfThePage"> </a>
-    <nav>
-        <div>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#PROPOS">à propos</a></li>
-                <li><a href="#TRAVAIL">Travail</a></li>
-                <li><a href="#CV">CV</a></li>
-                <li><a href="#CONTACT">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- À propos -->
-    <section>
-        <div>
-            <h2>À propos</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
-                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br> 
-                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>
-                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <br>
-                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat <br>
-                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-        <div>
-            <h3>Nos valeurs</h3>
-        <ul>
-          <li>Intégrité</li>
-          <li>Excellence</li>
-          <li>Respect</li>
-          <li>Innovation</li>
-        </ul>
-        </div>
-    </section>
-    <!-- Travail -->
-    <section>
-        <a name="TRAVAIL"></a>
-        <h1>Notre équipe de travail</h1>
-        <p>Notre équipe est composée de professionnels dévoués et passionnés par leur <br> 
-            métier. Nous mettons un point d'honneur à offrir un service de qualité à  <br>
-            nos clients.</p>
-           <video src="video.mp4" height="200" autoplay muted></video> <br>
-           <audio src="audio.mp3" controls></audio>
-        <h2>Les types d'ouvriers</h2>
-        <table border="2">
-            <thead>
-                <tr>
-                    <th>Type d'ouvrier</th>
-                    <th>Salaire horaire</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ouvrier qualifié</td>
-                    <td>1300DT</td>
-                </tr>
-                <tr>
-                    <td>Ouvrier semi-qualifié</td>
-                    <td>800DT</td>
-                </tr>
-                <tr>
-                    <td>Ouvrier non-qualifié</td>
-                    <td>500DT</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <!-- CV -->
-    <section>
-        <a name="CV"></a>
-        <div>
-            <h1>Mon CV</h1>
-            <img src="image-cv.jpg" alt="l'image cv" width="100" height="100">
-        </div>
-        
-           
-        <div>
-            <h2>Informations personnelles</h2>
-            <p>Nom: Jean Dupont</p>
-            <p>Email: jean.dupont@exemple.com</p>
-            <p>Téléphone: 555-555-1212</p>
-        </<div>
-
-        <div><h2>Formation</h2>
-            <h3>Diplôme universitaire en informatique</h3>
-            <p>Université XYZ</p>
-            <p>Diplômé: mai 2020</p>
-        </div>
-        <div>
-            <h2>Expérience professionnelle</h2>
-            <h3>Ingénieur logiciel</h3>
-            <p>Entreprise ABC</p>
-            <p>juin 2020 - présent</p>
-            <ul>
-            <li>Développement et maintenance d'applications logicielles utilisant des langages tels que Java et Python</li>
-            <li>Collaboration avec des équipes pluridisciplinaires pour assurer le succès des projets</li>
-            </ul>
-        </div>
+    <header>
+        <a name="TopOfThePage"> </a>
+        <nav>
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+             <ul>
+                 <li><a href="#" class="active">Accueil</a></li>
+                 <li><a href="#PROPOS">à propos</a></li>
+                 <li><a href="#TRAVAIL">Travail</a></li>
+                 <li><a href="#CV">CV</a></li>
+                 <li><a href="#CONTACT">Contact</a></li>
+              </ul>
+         </nav>
+         <div class="image">
+            <img src="image-nav.jpg" alt="image-nav">
+         </div>
+    </header>
+    <main>
+        <video src="video.mp4" width="900" height="auto" autoplay muted></video> 
+         <!-- Travail -->
+        <section class="travail" id="TRAVAIL">
+            <div class="travail-text">
+                <h1>Notre équipe de travail</h1>
+                <p>  
+                Notre équipe est composée de professionnels dévoués et passionnés par leur 
+                métier. Nous mettons un point d'honneur à offrir un service de qualité à  
+                nos clients.
+               </p>
+            <div>  
+            <table class="ouvrier_table">
+                    <tr>
+                        <th>Type d'ouvrier</th>
+                        <th>Salaire horaire</th>
+                    </tr>
+                    <tr>
+                        <td>Ouvrier qualifié</td>
+                        <td>1300DT</td>
+                    </tr>
+                    <tr>
+                        <td>Ouvrier semi-qualifié</td>
+                        <td>800DT</td>
+                    </tr>
+                    <tr>
+                        <td>Ouvrier non-qualifié</td>
+                        <td>500DT</td>
+                    </tr>
     
-        <div>
-            <h2>Compétences</h2>
-            <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            </ul></div>
-    </section>
-    <!-- Contact -->
-    <section>
+            </table>
+           
+            <audio src="audio.mp3" controls></audio>
+        </section>
         
-        <h1>Page de contact</h1>
-        <a name="CONTACT"></a>
-        <form>
-          <label for="name">Nom :</label><br>
-          <input type="text"  name="name"><br>
-          <label for="email">Email :</label><br>
-          <input type="text"  name="email"><br>
-          <label for="message">Message :</label><br>
-          <textarea  name="message" rows="5" cols="30"></textarea><br>
-          <button type="submit">Envoyer</button>
-        </form> 
-    </section>
+
+                <!-- À propos -->
+
+        <section class="about"id=PROPOS>
+            <div class="main">
+                <img src="image-apropos.jpg" alt="image">
+                <div class="about-text">
+                     <h1>À propos</h1>
+                     <h5> Lorem ipsum <span> dolor sit amet, </span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                         ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                         ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                    </p>
+                    <button type="button">button</button>
+                </div>
+               
+            </div>
+        </section>
+         <!-- CV -->
+        <section>
+            <a name="CV"></a>
+            <div>
+                <h1>Mon CV</h1>
+                <img src="image-cv.jpg" alt="l'image cv" width="100" height="100">
+            </div>
+            
+               
+            <div>
+                <h2>Informations personnelles</h2>
+                <p>Nom: Jean Dupont</p>
+                <p>Email: jean.dupont@exemple.com</p>
+                <p>Téléphone: 555-555-1212</p>
+            </div>
+    
+            <div><h2>Formation</h2>
+                <h3>Diplôme universitaire en informatique</h3>
+                <p>Université XYZ</p>
+                <p>Diplômé: mai 2020</p>
+            </div>
+            <div>
+                <h2>Expérience professionnelle</h2>
+                <h3>Ingénieur logiciel</h3>
+                <p>Entreprise ABC</p>
+                <p>juin 2020 - présent</p>
+                <ul>
+                <li>Développement et maintenance d'applications logicielles utilisant des langages tels que Java et Python</li>
+                <li>Collaboration avec des équipes pluridisciplinaires pour assurer le succès des projets</li>
+                </ul>
+            </div>
+        
+            <div>
+                <h2>Compétences</h2>
+                <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                </ul></div>
+        </section>
+        <!-- Contact -->
+        <section id="CONTACT">
+            <form >
+                <h1>contatez-nous</h1>
+                <div class="separation"></div>
+                <div class="corps-formulaire">
+                    <div class="gauche">
+                       <div class="boite">
+                        <label>Votre prénom</label><br>
+                        <input type="text">
+                       </div>
+                       <div class="boite">
+                        <label>Votre adresse e-mail</label><br>
+                        <input type="text">
+                       </div>
+                       <div class="boite">
+                        <label>Votre téléphone</label><br>
+                        <input type="text">
+                       </div>
+                    </div>
+                    <div class="droite">
+                        <div class="groupe">
+                            <label>Message</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="pied-formulaile" align="center">
+                    <button>Envoyer le message</button>
+                </div>
+            </form> 
+        </section>
+    </main>
     <!-- Pied de page-->
     <footer>
-        
-        <div>
-          <ul>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Conditions d'utilisation</a></li>
-            <li><a href="#">Nous contacter</a></li>
-          </ul>
-        </div>
-        <div>
-            <h3>SUIVER NOUS SUR</h3>
+        <div class="footer-check">
+            <h3>chechpoint CSS</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate tempore odit ipsa, facilis a ducimus voluptas omnis sed in consequatur nisi nihil 
+                vero rem optio unde, illo hic voluptatibus.
+            </P>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Youtube</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">youtube</a></li>
                 <li><a href="#">e-mail</a></li>
-              </ul>
+                <li><a href="#">twitter</a></li>
+            </ul>
         </div>
-        <p>Copyright 2023 - Mon site web</p>
-        <a href="#TopOfThePage">TopOfThePage</a>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 chechpoint-CSS</p>
+        </div>
       </footer>
 </body>
   

@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto';
+    background-color:#eddcc4;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+   
+    width: 100%;
+    height: 75px;
+    background-color: #505d61;
+    padding: 0px 100px;
+    line-height: 75px;
+}
+nav .logo{
+ font-size: 30px;
+ font-weight: bold;
+ letter-spacing: 1.5px;
+}
+nav .logo p{
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+}
+nav ul li a:hover{
+    color: #279dc1;
+}
+nav ul li .active{
+    color: #279dc1;
+}
+.image img{
+    width: 100%;
+    height: 0px auto;
+   opacity: 0.80;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+    float: right;
+}
+.about-text h1{
+    color: black;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.about-text h5 span{
+    color: #279dc1;
+}
+.about-text p{
+    color: #505d61;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    margin: 10px;
+}
+.about button{
+    background: #279dc1;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    
+}
+
+.about button:hover{
+    background: transparent;
+    border: 2px solid #279dc1;
+    cursor: pointer;
+
+}
+.ouvrier_table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 5px;
+    margin-bottom:20px;
+}
+.ouvrier_table td,
+.ouvrier_table th{
+    border:1px solid gray;
+    padding: 7px;
+}
+.ouvrier_table th{
+    background-color: #279dc1;
+    color: black;
+    padding-top:11px;
+    padding-bottom: 11px;
+}
+.ouvrier_table tr{
+    text-align: center;
+}
+.ouvrier_table tr:nth-child(even){
+    background-color: #ccc;
+    
+}
+.travail{
+   
+}
+
+.travail-text{
+    width: 600px;
+    margin: 50px;
+}
+
+.travail-text h1{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.travail-text p{
+    color: #505d61;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+ video{
+   margin: 30px;
+    float: right;
+}
+/* contact */
+
+
+/* footer */
+footer{
+    background-color: #505d61;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+}
+.footer-check{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer-check h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+.footer-check p{
+    max-width: 500px;
+    margin:10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-check ul li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer-check ul li a{
+    color: #279dc1;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+}
+.footer-check ul li a:hover{
+    color: #fff;
+}
+.footer-bottom{
+    background-color: #404a4e;
+    width: 100vw;
+    padding:20px 0 ;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
